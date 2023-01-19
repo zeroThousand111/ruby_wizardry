@@ -11,6 +11,9 @@ end
 # The flow_rate can be reset with the value below to change the outcome of the if/else block below (remove the #)
 # flow_rate = 100
 
+# The second code block can be commented out with the =begin/=end commands and won't run
+
+=begin
 if flow_rate > 50
   puts "Warning! flow_rate is above 50! It is #{flow_rate}."
   flow_rate = 50
@@ -22,3 +25,13 @@ elsif flow_rate < 50
 else
   puts "The flow_rate is #{flow_rate} (Thank goodness!)"
 end
+=end
+
+if flow_rate < 50 || flow_rate > 50
+  puts "The flow_rate is not 50!  It is #{flow_rate}."
+  flow_rate = 50
+  puts "The flow_rate has been reset to #{flow_rate}."
+else
+  puts "The flow_rate is #{flow_rate} (Thank goodness!)"
+end
+
