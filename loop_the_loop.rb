@@ -10,6 +10,7 @@ if stops.include? destination
     stops.each do |stop|
       puts stop
       break if stop == destination
+      we_wanna_ride = false
     end
   else
     puts "Sorry, we don't stop at that station. Maybe another time!"
