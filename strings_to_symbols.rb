@@ -17,5 +17,10 @@ end
 
 puts "Object ID after: #{my_own_menu.object_id}"
 
-puts my_own_menu
+p my_own_menu
 
+my_own_menu.keys.each do |key|
+  my_own_menu[key.to_s] = my_own_menu.delete(key)
+end
+
+p my_own_menu
